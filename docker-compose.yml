@@ -1,0 +1,17 @@
+# docker-compose for Ubuntu Development Environment
+#
+# This script is used to start the docker-compose for Ubuntu Develpment Environment.
+#
+# @author: Takahashi Akari <akaritakahashioss@gmail.com>
+# @date: 2022-08-22
+# @version: 0.0.1
+version: "3"
+services:
+  ubuntu_dev:
+    ports:
+      - "80:80"
+    image: ubuntu:latest
+    volumes:
+      - ./share:/root
+    tty: true
+
